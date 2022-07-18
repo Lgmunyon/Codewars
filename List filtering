@@ -7,11 +7,14 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 
 
 function filter_list(l) {
-  var integers = []
-  for(var i = 0; i < l.length; i++){
+  let integers = []
+  for(let i = 0; i < l.length; i++){
   if(Number.isInteger(l[i])){
   integers.push(l[i])
     } 
   }
   return integers
 }
+
+
+//let integers = an array (l). For loop, let i = 0, if i is less than the length of array l add one to i.
